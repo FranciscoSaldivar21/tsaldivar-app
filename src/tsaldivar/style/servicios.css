@@ -1,0 +1,22 @@
+@import '/src/index.css';
+
+.servicios-info {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr );
+    gap: 50px;
+}
+
+.card-servicio-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}
+
+.service-title {
+    text-align: center;
+}
