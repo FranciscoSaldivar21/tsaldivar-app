@@ -1,6 +1,6 @@
 import { ContactoInfo } from '../components/ContactoInfo';
-import { useForm } from '../hooks/useForm'
-import '../style/contacto.css'
+import { useForm } from '../hooks/useForm';
+import '../style/contacto.css';
 
 export const Contacto = () => {
 
@@ -17,7 +17,7 @@ export const Contacto = () => {
   }
 
   return (
-    <section id='contacto' className='container'>
+    <section id='contacto'>
       <h2 className='title'> Contacto </h2>
       <div className='form-container'>
         <form className="contacto-form">

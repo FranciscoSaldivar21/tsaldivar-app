@@ -9,4 +9,9 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid var(--green);
+    padding: 10px 0 10px 0;
+}
+
+.text-footer {
+    margin: 0;
 }

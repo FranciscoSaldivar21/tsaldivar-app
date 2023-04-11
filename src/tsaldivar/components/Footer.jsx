@@ -3,10 +3,10 @@ import '../style/footer.css';
 export const Footer = () => {
   return (
     <div className='footer'>
-        <p>Transportes Saldivar</p>
-        <p>Todos los derechos reservados</p>
-        <p>saldivar.transportes@hotmail.com</p>
-        <p>(+52) 33 10413175</p>
+        <p className='text-footer'>Transportes Saldivar</p>
+        <p className='text-footer'>Todos los derechos reservados</p>
+        <p className='text-footer'>saldivar.transportes@hotmail.com</p>
+        <p className='text-footer'>(+52) 3310413175</p>
     </div>
   )
 }

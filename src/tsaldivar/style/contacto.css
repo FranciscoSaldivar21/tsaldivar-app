@@ -1,8 +1,5 @@
 @import '/src/index.css';
 
-.container {
-    margin-top: 80px;
-}
 
 .title {
     text-align: center;
@@ -15,7 +12,7 @@
     align-items: center;
     flex-direction: column;
 }
-
+ 
 textarea { 
     min-height: 80px;
     width: 400px;
@@ -56,6 +53,12 @@ textarea {
     justify-content: space-evenly;
 }
 
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+}
+
 .info-title {
     padding: 0;
     margin: 0;
@@ -71,13 +74,21 @@ textarea {
 
 .info-contacto {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     flex: 1;
     align-items: center;
 }
 
 .info {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .info {
+        margin-top: 20px;
+    }
 }
 
 .ml-5 {

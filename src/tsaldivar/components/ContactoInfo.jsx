@@ -4,6 +4,7 @@ export const ContactoInfo = () => {
   return (
     <div className="info">
       <p className="info-title">TRANSPORTES SALDIVAR</p>
+      <ion-icon name="business-outline"></ion-icon>
       <p className="info-body">Calle tamarindo #205 </p>
       <p className="info-body">Col. Lomas del camichín</p>
       <p className="info-body">Tonalá, Jalisco. CP: 45403</p>

@@ -7,10 +7,17 @@
     gap: 50px;
 }
 
+@media (max-width: 480px) {
+    .servicios-info {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 .card-servicio-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 10px;
     border: 2px solid gainsboro;
@@ -19,4 +26,33 @@
 
 .service-title {
     text-align: center;
+}
+
+.info-servicio{
+    text-align: justify;
+    padding: 5px 10px 0px 10px;
+}
+
+.img-servicio {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    .card-servicio-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 2px solid gainsboro;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .img-servicio {
+        width: 100%;
+        height: auto;
+    }
 }

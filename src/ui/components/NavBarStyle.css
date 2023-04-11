@@ -3,15 +3,21 @@
 .navBar {
     display: flex;
     flex-direction: row;
-    justify-content: 
-    space-between;
+    justify-content: space-between;
     margin: auto;
     top: 0; 
     position: fixed;
-    width: 85%;  
+    width: 100%;  
     background-color: whitesmoke;   
     border-radius: 7px;
 }
+
+@media (max-width: 480px) {
+    .navBar {
+        flex-direction: column;
+    }
+}
+
 
 span {
     text-transform: uppercase;
@@ -20,17 +26,17 @@ span {
 a {
     text-decoration: none;
     color: black;
-    margin-left: 5px;
+    margin-left: 5px; 
 }
 
-p{
+.llamanos{
     margin-left: 5px;
     border-bottom: 2px solid var(--green);
     padding-bottom: 2px;
 }
 
 .options-container {
-    display: flex;
+
     margin-right: 30px;
 }
 
@@ -40,6 +46,7 @@ p{
     justify-content: center;
     align-items: center;
 }
+
 
 .options-element {
     list-style: none;
@@ -51,12 +58,13 @@ p{
 }
 
 .contacto{
-    margin: 0 10px 0 10px;
+    margin: 0 10px 10px 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
 
 .mr-10 {
     margin-right: 10px;

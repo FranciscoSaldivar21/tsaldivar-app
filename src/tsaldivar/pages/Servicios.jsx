@@ -5,7 +5,7 @@ import '../style/servicios.css'
 export const Servicios = () => {
   return (
     <section id="servicios">
-        <h1 className="title">Servicios</h1>
+        <h2 className="title">Servicios</h2>
         <div className="servicios-info">
             {
                 servicios.map(servicio => (
@@ -16,3 +16,4 @@ export const Servicios = () => {
     </section>
   )
 }
+ 
