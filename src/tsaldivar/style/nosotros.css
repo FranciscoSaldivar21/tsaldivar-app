@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; 
     }
 }
 
@@ -35,10 +35,15 @@
 .img-galeria{
     width: 100%;
     height: auto;
-}
+    animation: backInLeft;
+    animation-duration: 2s;
+} 
 
 .nosotros-section {
     padding-top: 10px;
+
+    /* animation: bounce;
+    animation-duration: 2s; */
 }
 
 

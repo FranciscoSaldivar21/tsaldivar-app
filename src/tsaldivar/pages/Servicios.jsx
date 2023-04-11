@@ -4,7 +4,7 @@ import '../style/servicios.css'
 
 export const Servicios = () => {
   return (
-    <section id="servicios">
+    <section id="servicios" className="servicios">
         <h2 className="title">Servicios</h2>
         <div className="servicios-info">
             {

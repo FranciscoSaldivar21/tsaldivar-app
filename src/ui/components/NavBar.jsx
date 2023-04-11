@@ -16,5 +16,6 @@ export const NavBar = () => {
             <p className='llamanos mr-10'>Llamanos (+52) 3310413175</p>
         </div>
     </div>
-  ) 
+  )  
 }
+ 

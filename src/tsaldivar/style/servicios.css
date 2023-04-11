@@ -1,4 +1,10 @@
 @import '/src/index.css';
+@import 'animate.css';
+
+.servicios {
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
 
 .servicios-info {
     margin-top: 50px;
