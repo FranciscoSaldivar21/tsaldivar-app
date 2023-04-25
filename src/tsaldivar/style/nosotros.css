@@ -1,10 +1,7 @@
 @import '/src/index.css';
 
 .galeria {
-    display: grid;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (min-width: 480px) {
@@ -42,8 +39,19 @@
     animation-duration: 2s;
 } 
 
+.nosotros-section {
+    padding-top: 10px;
+
+    /* animation: bounce;
+    animation-duration: 2s; */
+}
+
 
 @media (max-width: 480px) {
+    .nosotros-section {
+        padding-top: 100px;
+    }
+
     .img-galeria {
         width: 300px;
         height: auto;
@@ -52,6 +60,7 @@
 }
 
 .img-open {
+    max-width: 70%;
     height: auto;
     display: block;
 }
@@ -77,7 +86,10 @@
     background-color: rgba(0, 0, 0, 0.5); 
 }
 
-
+picture {
+    display: block;
+    max-width: 80rem;
+}
 
 
 
