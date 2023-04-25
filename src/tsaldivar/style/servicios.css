@@ -61,4 +61,9 @@
         width: 100%;
         height: auto;
     }
+
+    .servicios-info {
+        margin-top: 0;
+        gap: 0;
+    }
 }

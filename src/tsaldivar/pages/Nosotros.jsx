@@ -1,14 +1,18 @@
 import '../style/nosotros.css'
 
-import nosotros1 from '../../img/nosotros1.jpg';
+import img10 from '../../img/imagen10.jpg';
+import img6 from '../../img/imagen6.jpg';
+import img8 from '../../img/imagen8.jpg';
+import img11 from '../../img/imagen11.jpg';
+import img13 from '../../img/imagen13.jpg';
+import img16 from '../../img/imagen16.jpg';
+import img4 from '../../img/imagen4.jpg';
 
 export const Nosotros = () => {
     function onImgClick({target}){
-      console.log(target);
       const imagen = document.createElement('img');
       imagen.className = 'img-open';
       imagen.src = target.src;
-      console.log(imagen)
 
       //Crea el overlay con la imagen
       const overlay = document.createElement('DIV');
@@ -58,14 +62,14 @@ export const Nosotros = () => {
         </div>
         <h2>Galería</h2>
         <div className="galeria">
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ nosotros1 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img6 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img8 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img11 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img13 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img8 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img4 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img16 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img10 } alt='' onClick={onImgClick}/>
         </div>
     </section>
   )

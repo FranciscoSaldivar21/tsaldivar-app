@@ -1,6 +1,7 @@
 export const ServicioInfo = ( {servicio} ) => {
     
     const { titulo, descripcion, imagen } = servicio;
+    console.log("hola",imagen)
 
   return (
     <div className='card-servicio-info'>

@@ -54,7 +54,7 @@ export const Contacto = () => {
     if( validEmail.test(email) ) return true;
     else return false;
   }
-
+ 
   return (
     <section id='contacto'>
       <h2 className='title'> Contacto </h2>
