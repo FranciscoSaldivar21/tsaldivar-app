@@ -7,6 +7,7 @@ import img11 from '../../img/imagen11.jpg';
 import img13 from '../../img/imagen13.jpg';
 import img16 from '../../img/imagen16.jpg';
 import img4 from '../../img/imagen4.jpg';
+import img9 from '../../img/imagen9.jpg';
 
 export const Nosotros = () => {
     // function onImgClick({target}){
@@ -66,7 +67,7 @@ export const Nosotros = () => {
           <img className='img-galeria' src={ img8 } alt=''/>
           <img className='img-galeria' src={ img11 } alt=''/>
           <img className='img-galeria' src={ img13 } alt=''/>
-          <img className='img-galeria' src={ img8 } alt=''/>
+          <img className='img-galeria' src={ img9 } alt=''/>
           <img className='img-galeria' src={ img4 } alt=''/>
           <img className='img-galeria' src={ img16 } alt=''/>
           <img className='img-galeria' src={ img10 } alt=''/>
