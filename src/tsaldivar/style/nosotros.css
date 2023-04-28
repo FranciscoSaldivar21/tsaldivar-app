@@ -1,6 +1,10 @@
 @import '/src/index.css';
 
 .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -33,35 +37,22 @@
 
 
 .img-galeria{
-    width: 100%;
+    width: 90%;
     height: auto;
     animation: backInLeft;
     animation-duration: 2s;
 } 
 
-.nosotros-section {
-    padding-top: 10px;
-
-    /* animation: bounce;
-    animation-duration: 2s; */
-}
-
 
 @media (max-width: 480px) {
-    .nosotros-section {
-        padding-top: 100px;
-    }
-
     .img-galeria {
-        width: 300px;
-        height: auto;
         margin-top: 10px;
     }
 }
 
 .img-open {
-    max-width: 70%;
-    height: auto;
+    max-width: 90%;
+    height: 70%;
     display: block;
 }
 
@@ -94,8 +85,8 @@ picture {
 
 
 .btn-cerrar {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: white;
     color: black;
