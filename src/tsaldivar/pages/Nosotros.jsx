@@ -9,39 +9,39 @@ import img16 from '../../img/imagen16.jpg';
 import img4 from '../../img/imagen4.jpg';
 
 export const Nosotros = () => {
-    function onImgClick({target}){
-      const imagen = document.createElement('img');
-      imagen.className = 'img-open';
-      imagen.src = target.src;
+    // function onImgClick({target}){
+    //   const imagen = document.createElement('img');
+    //   imagen.className = 'img-open';
+    //   imagen.src = target.src;
 
-      //Crea el overlay con la imagen
-      const overlay = document.createElement('DIV');
-      overlay.appendChild(imagen); //Agrega la imagen a overlay
-      overlay.classList.add('overlay');  //Agrega una clase al elemento overlay creado
+    //   //Crea el overlay con la imagen
+    //   const overlay = document.createElement('DIV');
+    //   overlay.appendChild(imagen); //Agrega la imagen a overlay
+    //   overlay.classList.add('overlay');  //Agrega una clase al elemento overlay creado
 
-      //Este código hace que al dar click en cualquier area se cierre la imagen
-      overlay.onclick = function () {
-          const body = document.querySelector('body');  //Selecciona body
-          body.classList.remove('fijar-body');  //Elimina la clase cuando se presione x
-          overlay.remove();  //Elimina el overlay de la pantalla
-      }
+    //   //Este código hace que al dar click en cualquier area se cierre la imagen
+    //   overlay.onclick = function () {
+    //       const body = document.querySelector('body');  //Selecciona body
+    //       body.classList.remove('fijar-body');  //Elimina la clase cuando se presione x
+    //       overlay.remove();  //Elimina el overlay de la pantalla
+    //   }
 
-      //Boton para cerrar el modal
-      const cerrarModal = document.createElement('P');  //Crea un parrafo
-      cerrarModal.textContent = 'x';
-      cerrarModal.classList.add('btn-cerrar');  //Agrega la clase a cerrarModal
-      cerrarModal.onclick = function () {
-          const body = document.querySelector('body');  //Selecciona body
-          body.classList.remove('fijar-body');  //Elimina la clase cuando se presione x
-          overlay.remove();  //Elimina el overlay de la pantalla
-      }
-      overlay.appendChild(cerrarModal);
+    //   //Boton para cerrar el modal
+    //   const cerrarModal = document.createElement('P');  //Crea un parrafo
+    //   cerrarModal.textContent = 'x';
+    //   cerrarModal.classList.add('btn-cerrar');  //Agrega la clase a cerrarModal
+    //   cerrarModal.onclick = function () {
+    //       const body = document.querySelector('body');  //Selecciona body
+    //       body.classList.remove('fijar-body');  //Elimina la clase cuando se presione x
+    //       overlay.remove();  //Elimina el overlay de la pantalla
+    //   }
+    //   overlay.appendChild(cerrarModal);
 
-      //Añadir al HTML
-      const body = document.querySelector('body');
-      body.appendChild(overlay); //Agrega overlay al body
-      body.classList.add('fijar-body');
-    }
+    //   //Añadir al HTML
+    //   const body = document.querySelector('body');
+    //   body.appendChild(overlay); //Agrega overlay al body
+    //   body.classList.add('fijar-body');
+    // }
 
   return (
     <section className='nosotros-section' id='nosotros'>
@@ -62,14 +62,14 @@ export const Nosotros = () => {
         </div>
         <h2>Galería</h2>
         <div className="galeria">
-          <img className='img-galeria' src={ img6 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img8 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img11 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img13 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img8 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img4 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img16 } alt='' onClick={onImgClick}/>
-          <img className='img-galeria' src={ img10 } alt='' onClick={onImgClick}/>
+          <img className='img-galeria' src={ img6 } alt=''/>
+          <img className='img-galeria' src={ img8 } alt=''/>
+          <img className='img-galeria' src={ img11 } alt=''/>
+          <img className='img-galeria' src={ img13 } alt=''/>
+          <img className='img-galeria' src={ img8 } alt=''/>
+          <img className='img-galeria' src={ img4 } alt=''/>
+          <img className='img-galeria' src={ img16 } alt=''/>
+          <img className='img-galeria' src={ img10 } alt=''/>
         </div>
     </section>
   )

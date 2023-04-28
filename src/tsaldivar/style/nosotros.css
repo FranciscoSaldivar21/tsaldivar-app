@@ -1,14 +1,13 @@
 @import '/src/index.css';
 
 .galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
     .galeria {
         display: flex;
         flex-direction: column;
@@ -17,21 +16,17 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .galeria {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) {
     .galeria {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: center;
-        align-items: center;
     }
 }
 
